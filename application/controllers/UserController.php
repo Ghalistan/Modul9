@@ -5,13 +5,11 @@ class UserController extends CI_Controller {
 
 	public function Register()
 	{
-        // Nomor 5
+        // Nomor 4
         // Jika Password dan Re-Enter Password sama, maka:
         if(){
-            // Nomor 6
             // Panggil fungsi Register pada model User
             if() {
-                // Nomor 11
                 // Jika Berhasil Register
                 // Buat Flashdata dan arahkan kembali ke Landing
             } else {
@@ -19,14 +17,14 @@ class UserController extends CI_Controller {
                 // Buat Flashdata dan arahkan kembali ke Landing/Register
             }
         } else {
-            // Buat flashdata berisikan 'Fail'
-            // Yang digunakan untuk menandai gagal register
+            // Jika Password berbeda
+            // Buat flashdata
             // Arahkan kembali ke Landing/Register
         }
     }
 
     public function Signin() {
-        // Nomor 14
+        // Nomor 7
         // Panggil fungsi findUser
         // Jika User ditemukan
         if(){

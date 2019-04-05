@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Model {
     public function Register() {
-        // Nomor 7
+        // Nomor 5
         // Pastikan password yang di insert ke database sudah di enkripsi dengan MD5
         // Pastikan tanggal dan jam yang dimasukkan ke database sudah sesuai saat login
         $data = array(
@@ -12,8 +12,6 @@ class User extends CI_Model {
             "Pass" => 
             "RegisTime" => 
         );
-
-        // Nomor 8
         // Panggil Fungsi isExist
         // Jika isExist mengembalikan True, maka Register return False
         // Jika tidak maka masukkan data ke database
@@ -25,15 +23,15 @@ class User extends CI_Model {
         }
     }
 
-    public function isExist() {
-        // Nomor 9
+    public function isExist(USERNAME) {
         // Menerima masukkan Username yang akan dicek
     }
 
     public function findUser() {
-        // Nomor 14
+        // Nomor 7
         // Ambil data yang diinputkan user
         // Cari apakah data ada pada table login
+        // Kembalikan hasil dari pencarian
     }
 
     public function imageUpload($imgName) {
@@ -41,7 +39,7 @@ class User extends CI_Model {
     }
 
     public function getImage() {
-        // Nomor 16
+        // Nomor 8
         // Mengambil data dari table 'image_path' dan mengembalikan data berupa array
     }
 }

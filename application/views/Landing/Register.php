@@ -9,7 +9,7 @@
                             // Cek Apakah gagal login dengan mengecek flashdata yang dibuat
                             // Jika ya maka tampilkan view Alert Fail Registrasi
                         ?>
-                        <!-- Nomor 4 -->
+                        <!-- Nomor 3 -->
                         <form action="" method="POST" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -39,7 +39,7 @@
                     <div class="signup-image">
                         <figure><img src="<?php echo base_url('Assets/Landing/images/signup-image.jpg'); ?>" alt="sing up image"></figure>
                         <a href="" class="signup-image-link">I am already member</a>
-                    <!-- Endof Nomor 4 -->
+                    <!-- Endof Nomor 3 -->
                     </div>
                 </div>
             </div>

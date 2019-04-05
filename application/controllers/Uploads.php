@@ -17,9 +17,10 @@ class Uploads extends CI_Controller {
             // dan arahkan kembali ke halaman loggedin
         } else {
             // Jika upload berhasil
-            // simpan nama file ke table 'image_path' dengan memanggil fungsi imageUpload() pada model User
+            // Ambil informasi dari file yang diupload
             // buat flashdata menandakan berhasil upload
-            // dan arahkan kembali ke halaman loggedin
+            // simpan nama file ke table 'image_path' dengan memanggil fungsi imageUpload() pada model User
+            // dan arahkan ke Controller Landing/loginPage
         }
     }
 }

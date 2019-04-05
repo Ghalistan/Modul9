@@ -13,20 +13,17 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="<?php echo site_url(); ?>">
                 <?php
-                    $cookie = $this->input->cookie(NAMA_COOKIE);
-                    if(isset($cookie)){
-                        echo $cookie;
-                    } else if(isset($_SESSION[NAMA_SESSION])) {
-                        echo $_SESSION[NAMA_SESSION];
-                    }
+                    // Nomor 9
+                    // Ambil Cookie
+                    // Jika cookie ada maka echo isi cookie
+                    // Jika session ada maka echo isi session
                 ?>
                 </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- nomor 17 -->
+                    <!-- Tombol Logout mengarah ke fungsi logout() pada UserController -->
                     <li class="active"><a href="">Log Out<span class="sr-only">(current)</span></a></li>
-                    <!-- Endof Nomor 17 -->
                 </ul>
             </div>
         </div>
@@ -34,6 +31,7 @@
     <div class="container">
         <div class="col-md-6">
             <strong>Upload Image : </strong>
+            <!-- nomor 10 -->
             <!-- Panggil fungsi Upload/do_upload disini -->
                 <div class="form-group">
                     <!-- Tampilkan alert gagal jika gagal upload, dan alert berhasil jika berhasil upload disini -->
@@ -51,9 +49,9 @@
                     <img id='img-upload'/>
                 </div>
             </form>
+            <!-- Endof nomor 10 -->
         </div>
     </div>
-    <!-- Nomor 19 -->
     <div class="container">
         <div class="row">
             <!-- Tampilkan semua foto yang sudah diupload -->
@@ -62,6 +60,5 @@
             </div>
         </div>
     </div>
-    <!-- EndOf Nomor 19 -->
 </body>
 </html>
